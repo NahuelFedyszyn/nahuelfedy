@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>¡Bienvenido!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./src/images/logo1600x1600.ico" type="image/x-icon">
+    <script src="index.js"></script>
+</head>
+<body onload="iniciar()">
+    
+    <header id="header" style="opacity: 0;">
+          <nav class=" d-flex align-items-center navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home">
+                    <img src="src/images/fedyLogoTransparente.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    Nahuel Fedyszyn
+                </a>
+              <button id="togglerBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" onclick="rotateTogglerIcon()" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i id="togglerIcon" class="bi bi-plus-circle-fill"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sobreMi">Sobre Mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+
+    <div id="home" class="home">
+        <div class="container  homeNahuelContainer">
+            <div class="nahuelContainer">
+                <h1 id="nahuelTitle" style="opacity: 0;" class="nahuelTitle">Nahuel Fedyszyn</h1>
+            </div>
+            <div class="subNahuelContainer">
+                <h2 id="subNahuel" class="subNahuel" style="opacity: 0;">"Un apasionado por el desarrollo de Software"</h2>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 3rem;"></div>
+
+    <div id="sobreMi" class="sobreMi">
+
+        <div class="container">
+            <h1 class="sobreMiTitle">
+                
+            </h1>
+        </div>   
+        <div class="container">
+            <div class="row" style="margin-bottom: 2rem;">
+                <div class="col-sm itsMeImgContainer">
+                    <img id="itsMeImg" src="src/images/itsMe.png" >
+                </div>
+                <div class=" col-8 col-sm itsMeTitleContainer" >
+                    <h1 class="itsMeTitle">"Cada dia un poco más"</h1>
+                </div>
+            </div>
+            <div class="row">
+                <p>¡Hola! Mi nombre es Nahuel. Soy un estudiante de Ingenieria en Informatica y un desarrollador web junior.</p>
+                <p>Todos los dias estoy estudiando y practicando mis habilidades como desarrollador para poder algún dia entrar a un equipo de desarrollo y poder dedicarme a lo que realmente me gusta.</p>
+                <p></p>
+            </div>
+            <div class="row">
+                <div class="imgFedyContainer">
+                    <img id="imgFedy" src="src/images/fedyLogoFullTransparente.png">
+                </div>
+            </div>
+            <div class="row">
+                <h1 class="fedyTitle">Mi espacio para el desarrollo Front End</h1>
+            </div>
+            <div class="row">
+                <p>Actualmente soy el fundador y único empleado de Fedy Development, compañia dedicada al diseño de paginas web para pequeñas y medianas empresas, o para particulares independientes, con el objetivo de hacer que sus trabajos tengan una imagen más profesional frente a sus clientes y poder brindarles más información a los mismos a través de Internet.</p>
+            </div>
+            <div  class="habilidadesMainContainer">
+                <div  class="row habilidadesTitleContainer">
+                    <h1 class="habilidadesTitle">Habilidades</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div id="hjs" class="habilidadContainer">
+                            <div class="habilidadImgContainer fade-in">
+                                <img src="src/images/habilidades/js.png" />
+                            </div>
+                            <h6 class="habilidadTitle">Javascript</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div id="hhtml" class="habilidadContainer">
+                            <div class="habilidadImgContainer fade-in">
+                                <img src="src/images/habilidades/html5.png" />
+                            </div>
+                            <h6 class="habilidadTitle">HTML5</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div id="hcss" class="habilidadContainer">
+                            <div class="habilidadImgContainer fade-in">
+                                <img src="src/images/habilidades/css.png" />
+                            </div>
+                            <h6 class="habilidadTitle">CSS3</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div id="hreact" class="habilidadContainer">
+                            <div class="habilidadImgContainer hidden fade-in">
+                                <img src="src/images/habilidades/react.png" />
+                            </div>
+                            <h6 class="habilidadTitle">ReactJs</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div id="hboot" class="habilidadContainer">
+                            <div class="habilidadImgContainer fade-in">
+                                <img src="src/images/habilidades/bootstrap.png" />
+                            </div>
+                            <h6 class="habilidadTitle">Bootstrap</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="proyectos" class="proyectosMainContainer">
+                <div class="row">
+                    <h1 class="proyectosTitle">
+                        Proyectos
+                    </h1>
+                </div>
+                <div id="cardContainer1" class="row">
+
+                    <div class="col cardContainer">
+                        <div id="cardFedy" class="card" style="width: 18rem; opacity: 0;">
+                            <div class="cardImgContainer">
+                                <img src="src/images/logo1600x1600transparente.ico" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Nahuel Fedyszyn</h5>
+                              <h4 class="card-subtitle">Sitio web portafolio</h4>
+                              <div style="display: flex; align-items: center;">
+                                  <a href="#" class="cardLiveLink">Visitar</a>
+                                  <a target="_blank" href="#" class="cardGit"><i class="bi bi-github"></i></a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col cardContainer ">
+                        <div id="cardMercadito"  class="card fade-in" style="width: 18rem; opacity: 0;">
+                            <div class="cardImgContainer">
+                                <img src="src/images/cards/mercaditoApp.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Mercadito App</h5>
+                              <h4 class="card-subtitle">React App</h4>
+                              <div style="display: flex; align-items: center;">
+                                  <a target="_blank" href="https://nahuelfedyszyn.github.io/mercaditoReactApp/" class="cardLiveLink">Visitar</a>
+                                  <a target="_blank" href="https://github.com/NahuelFedyszyn/mercaditoReactApp" class="cardGit"><i class="bi bi-github"></i></a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col cardContainer fade-in">
+                        <div id="cardMecha"  class="card fade-in" style="width: 18rem; opacity: 0;">
+                            <div class="cardImgContainer">
+                                <img src="src/images/cards/mechaApp.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Mecha App</h5>
+                              <h4 class="card-subtitle">React App</h4>
+                              <div style="display: flex; align-items: center;">
+                                  <a target="_blank" href="https://nahuelfedyszyn.github.io/react-mecanografiaApp/" class="cardLiveLink">Visitar</a>
+                                  <a target="_blank" href="https://github.com/NahuelFedyszyn/react-mecanografiaApp" class="cardGit"><i class="bi bi-github"></i></a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="contacto">
+                <div class="mainContactoContainer">
+                    <div class="row contactoTitleContainer">
+                        <h1 class="contactoTitle">Contacto</h1>
+                    </div>
+                    <div class="contactForm">
+                        <div class="botonera">
+                            <div class="contactBtnContainer">
+                                <button onclick="botonMail()" class="contactBtn"><i class="bi bi-envelope"></i></button>
+                            </div>
+                            <div class="contactBtnContainer">
+                                <button onclick="botonWpp()" class="contactBtn"><i class="bi bi-whatsapp"></i></button>
+                            </div>
+                            <div class="contactBtnContainer">
+                                <button onclick="botonLlamar()" class="contactBtn"><i class="bi bi-phone"></i></button>
+                            </div>
+                        </div>
+                        <div class="textContainer">
+                            <div class="botoneraTextContainer">
+                                <p id="botoneraText" class="botoneraText">Pulsa alguno de los botones para obtener informacion</p>
+                            </div>
+                            <h1 id="contactTitle" hidden="true">HOLA</h1>
+                            <h2 id="contactInfo" hidden="true" >nahuelfedyszyn@gmail.com</h2>
+                            <div class="contactLinkContainer" >
+                                <a target="_blank" id="contactLink" hidden="true" class="contactLink"></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="socialContainer">
+                            <a target="_blank" href="https://www.linkedin.com/in/nahuel-fedyszyn-a95764186/" class="socialLink"><i class="bi bi-linkedin"></i></a>
+                            <a target="_blank" href="https://github.com/NahuelFedyszyn" class="socialLink"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

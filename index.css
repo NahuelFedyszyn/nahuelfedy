@@ -1,0 +1,428 @@
+button:active{
+    outline: none !important; 
+    border: none !important;
+    
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+header{
+    position: fixed;
+    min-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0;
+    transition: 0.3s;
+    box-shadow: 0 0 5px 5px lightgray;
+    z-index: 10 !important;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: whitesmoke;
+}
+
+.navbar-toggler{
+    border:none;
+    outline: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-brand{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-link{
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: orangered !important;
+}
+
+#togglerIcon{
+    font-size: 1.5rem;
+    color: orange;
+}
+
+.bg-light{
+    background-color: rgb(252, 235, 228) !important;
+}
+
+.home{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.homeNahuelContainer{
+    min-width: 100vw !important;
+    background-image: url("./src/images/backPhoto.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 5rem;
+    box-shadow: 0 0 5px 5px grey;
+}
+
+.subNahuel{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.nahuelTitle{
+    font-size: 3rem;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.nahuelContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto 1rem;
+    margin-bottom: 2rem;
+    transition: 0.5s;
+}
+
+.subNahuelContainer{
+    margin: auto 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (min-width:930px) {
+    
+    .nahuelContainer{
+        margin-top: 5rem;
+        margin-right: 8rem;
+    }
+
+    .subNahuelContainer{
+        margin-right: 8rem;
+    }
+
+    .nahuelTitle{
+        font-size: 5rem;
+    }
+
+    .subNahuel{
+        font-size: 2.5rem;
+    }
+    
+}
+
+
+
+
+
+
+
+.sobreMiTitle{
+    margin: 2rem auto;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.itsMeImgContainer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itsMeTitleContainer{
+    display: flex;
+    align-items: center;
+    min-height: 10rem;
+    width: 90%;
+}
+
+.itsMeTitle{
+    text-align: center;
+    font-style: italic;
+    font-size: 300%;
+    font-family: 'Bodoni Moda', serif;
+}
+
+#itsMeImg{
+    max-width: 50% !important;
+    
+}
+
+.imgFedyContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#imgFedy{
+    size: cover;
+    max-width: 60%;
+}
+
+.fedyTitle{
+    font-family: 'Bodoni Moda', serif;
+    margin-top: 3rem;
+    text-align: center;
+    font-style: italic;
+    font-size: 200%;
+}
+
+.habilidadesTitleContainer{
+    margin: 2rem auto;
+}
+
+.habilidadesTitle{
+    font-size: 3rem;
+    margin: 0rem auto 3rem 1rem;
+    font-family: 'Bodoni Moda', serif;
+    
+}
+
+.habilidadTitle{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.habilidadImgContainer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.habilidadImgContainer img{
+    width: 5rem;
+}
+
+.habilidadesMainContainer{
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    border:grey solid 0.5px;
+    box-shadow: 0 0 10px 5px lightgray;
+    margin-top: 3rem;
+}
+
+.proyectosTitle{
+    font-family: 'Bodoni Moda', serif;
+    margin: 4rem auto 3rem auto;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card{
+    box-shadow: 0 0 10px 5px lightgray;
+    transition: 0.3s;
+    margin:1rem auto
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.cardImgContainer{
+    min-height: 15rem;
+    min-width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardImgContainer img{
+    max-width: 80%;
+}
+
+.card-title{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.5rem;
+}
+
+.card-subtitle{
+    font-size: 1rem;
+    font-family: 'Bodoni Moda', serif;
+    margin: 1rem auto;
+    font-style: italic;
+}
+
+.cardLiveLink{
+    text-decoration: none;
+    color:black;
+    border: orange 0.5px solid;
+    padding:0.4rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    background-color: whitesmoke;
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px 5px lightgray;
+    transition: 0.3s;
+}
+
+.cardLiveLink:hover{
+    box-shadow: 0 0 10px 5px grey;
+    color:black;
+}
+
+.cardGit{
+    font-size: 2.5rem;
+    margin-top: -0.5rem;
+    color:orange;
+    transition: 0.3s;
+}
+
+.cardGit:hover{
+    text-shadow: orangered 0 0 10px;
+    color:orange;
+}
+
+#contacto{
+    margin: 5rem auto;
+}
+
+.contactoTitle{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.contactBtn{
+    padding:0rem;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    margin: 0;
+    border:solid orange 2px;
+    box-shadow: 0 0 10px 5px lightgray;
+    cursor: pointer;
+}
+
+.contactForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonera{
+    margin-right: 2rem;
+    width: 25%;
+}
+
+.contactBtn{
+    margin: 1rem auto;
+    transition: 0.3s ease-in-out;
+}
+
+.contactBtn:hover{
+    box-shadow: 0 0 10px 5px gray;
+}
+
+.contactBtn i{
+    font-size: 2rem;
+}
+
+.botoneraText{
+    width: 75%;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.botoneraTextContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactLink{
+    text-decoration: none;
+    color:orangered;
+    border: orange solid 2px;
+    text-align: center;
+    padding: 1rem ;
+    box-shadow: 0 0 10px 5px lightgray;
+    font-weight: 500;
+    margin-top: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.contactLink:hover{
+    box-shadow: 0 0 10px 5px grey;
+    color: orangered;
+}
+
+.contactLinkContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.socialContainer{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialLink{
+    background-color: orangered;
+    color:white;
+    border-radius: 20px;
+    font-size: 5rem;
+    height: 7rem;
+    width: 7rem;
+    text-align: center;
+    margin: auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}  
+
+.socialLink:hover{
+    transform: scale(1.1);
+    box-shadow: tomato 0 0 15px 5px ;
+    color:white;
+    text-decoration: none;
+}
+
+#contactTitle{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color:orangered;
+    font-family: 'Bodoni Moda', serif;
+}
+
+#contactInfo{
+    text-align: center;
+    
+    font-size: 1rem;
+}
+
