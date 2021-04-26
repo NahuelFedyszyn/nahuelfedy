@@ -75,6 +75,8 @@ body{
 
 .homeNahuelContainer{
     min-width: 100vw !important;
+    background: rgb(255,242,179);
+    background: linear-gradient(326deg, rgba(255,242,179,1) 0%, rgba(231,231,231,1) 49%, rgba(255,251,183,1) 100%);
     background-image: url("./src/images/backPhoto.jpg");
     min-height: 100vh;
     background-size: cover;
