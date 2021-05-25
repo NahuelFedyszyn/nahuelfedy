@@ -12,6 +12,7 @@ function iniciar(){
 let cardFedyState = true;
 let cardMercaditoState = true;
 let cardMechaState = true;
+let cardRandomQuoteState=true;
 let hjsState = true;
 let hhtmlState = true;
 let hcssState = true;
@@ -57,6 +58,10 @@ window.onscroll = function() { //This function hides the header if we are going 
     if(isInViewport("cardMecha")&&cardMechaState){
     fadeIn(5,"cardMecha");
     cardMechaState = false;
+    }
+    if(isInViewport("cardRandomQuoteGenerator")&&cardRandomQuoteState){
+    fadeIn(5,"cardRandomQuoteGenerator");
+    cardRandomQuoteState = false;
     }
     if(isInViewport("hjs")&&hjsState){
     fadeIn(5,"hjs");
