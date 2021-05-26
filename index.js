@@ -13,6 +13,7 @@ let cardFedyState = true;
 let cardMercaditoState = true;
 let cardMechaState = true;
 let cardRandomQuoteState=true;
+let cardMarkdownPreviewerState=true;
 let hjsState = true;
 let hhtmlState = true;
 let hcssState = true;
@@ -50,6 +51,10 @@ window.onscroll = function() { //This function hides the header if we are going 
     if(isInViewport("cardFedy")&&cardFedyState){
     fadeIn(5,"cardFedy");
     cardFedyState = false;
+    }
+    if(isInViewport("cardMarkdownPreviewer")&&cardMarkdownPreviewerState){
+    fadeIn(5,"cardMarkdownPreviewer");
+    cardMarkdownPreviewerState = false;
     }
     if(isInViewport("cardMercadito")&&cardMercaditoState){
     fadeIn(5,"cardMercadito");
